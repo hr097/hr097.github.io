@@ -508,7 +508,7 @@
 
 </head>
 
-<body>
+<body onunload="lastMess();">
     <div class="content-wrapper">
 
      <center><nav class="table-of-contents mynav"><ul style="list-style-type:none;" id="first-link"><li><a href="#%F0%9F%99%8B%E2%80%8D%E2%99%82%EF%B8%8F-about-me">👩‍💻 About Me : </a></li><li><a href="#%F0%9F%9A%80-languages-and-tools%3A">🧬Languages and 🛠Tools : </a></li><li><a href="#%F0%9F%93%8A-my-github-stats">📊 My Github Stats : </a></li><li><a href="#connect-with-me%3A">🔗Connect with me : </a></li></ul></nav><img style="max-width:100%;max-height:70%;border:5px solid white; margin:20px;" src="IMAGES/Earth Hour (Banner (Landscape)) (1).png" alt='hr097'></center>
@@ -583,5 +583,18 @@
 </div>
 
 </body>
+<script type="text/javascript">
+     function lastMess(){
+     let action = window.confirm("Thanks for visiting My Website : Harshil Ramani.\n\n\t\tare you sure ? ");
+     if(action)
+     {
+       window.close();
+     }
+     else
+     {
+       window.reload();
+     }
+    }
+</script>
 
 </html>
