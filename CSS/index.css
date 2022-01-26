@@ -6,7 +6,7 @@
     	line-height: 1.6;
     	word-wrap: break-word;
     	color: #333333;
-      /* text-align: center; */
+      text-align: center;
     }
 
     .content-wrapper{
@@ -390,7 +390,7 @@
            #myanimation{
               display: inline-block;
      		      color: green;
-     		      max-width: 100%;
+     		      max-width: 890px;
               white-space: nowrap;
      		      overflow:hidden;
               border-bottom: 5px outset black;
@@ -419,17 +419,17 @@
              100%{margin-left:0px;}
            }
            @keyframes reveal{
-             0%{opacity: 0; width: 0%;}
-             20%{opacity: 1; width: 0%;}
+             0%{opacity: 0; width: 0px;}
+             20%{opacity: 1; width: 0px;}
              80%{opacity: 1;}
-             100%{opacity: 0; width: 100%;}
+             100%{opacity: 0; width: 1055px;}
            }
            
        	  #myAnim2{
            display: block;
            overflow: hidden;
        	   color: rgb(111, 114, 111);
-       	   max-width: 100%;
+       	   max-width: 890px;
            white-space: nowrap;
            }
            #myAnim2:first-of-type{
@@ -456,10 +456,10 @@
            100%{margin-left:0px;}
            }
            @keyframes reveal{
-             0%{opacity: 0; width: 0%;}
-             20%{opacity: 1; width: 0%;}
+             0%{opacity: 0; width: 0px;}
+             20%{opacity: 1; width: 0px;}
              80%{opacity: 1;}
-             100%{opacity: 0; width: 100%;}
+             100%{opacity: 0; width: 1055px;}
            }
      /* Page Break : use <div class="page"/> to insert page break
     -------------------------------------------------------- */
