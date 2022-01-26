@@ -382,15 +382,16 @@
      	color: #C9AE75; /* Change the old color so it seems less like an error */
      	font-size: inherit;
      }
-     
+     /*
      @import url(
      'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
        
-           #myanimation{
+          #myanimation{
               display: inline-block;
      		      color: green;
-     		      max-width: 890px;
+     		      max-width:100%;
               white-space: nowrap;
+              word-wrap: break-word:
      		      overflow:hidden;
               border-bottom: 5px outset black;
      	    }
@@ -419,17 +420,18 @@
            }
            @keyframes reveal{
              0%{opacity: 0; width: 0px;}
-             20%{opacity: 1; width: 0px;}
+             20%{opacity: 1; width: 50%;}
              80%{opacity: 1;}
-             100%{opacity: 0; width: 1055px;}
+             100%{opacity: 0; width: 100%;}
            }
            
        	  #myAnim2{
            display: block;
            overflow: hidden;
        	   color: rgb(111, 114, 111);
-       	   max-width: 890px;
+       	   max-width:100%;
            white-space: nowrap;
+           word-wrap: break-word:
            }
            #myAnim2:first-of-type{
              animation: appear 5s infinite;
@@ -456,10 +458,10 @@
            }
            @keyframes reveal{
              0%{opacity: 0; width: 0px;}
-             20%{opacity: 1; width: 0px;}
+             20%{opacity: 1; width: 50%;}
              80%{opacity: 1;}
-             100%{opacity: 0; width: 1055px;}
-           }
+             100%{opacity: 0; width: 100%;}
+           }*/
      /* Page Break : use <div class="page"/> to insert page break
     -------------------------------------------------------- */
     .page {
@@ -485,4 +487,40 @@
     {
       max-height: 80px;
       max-width: 80px;
+    }
+    .Post
+    {
+      margin:auto;
+      font-size:28px;
+      max-width: 100%;
+    }
+    .wrapper {
+      height: 10vh;
+      /*This part is important for centering*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .typing-anim {
+      width: 45ch;
+      animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 2em;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+        
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
     }
