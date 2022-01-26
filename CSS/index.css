@@ -390,7 +390,7 @@
            #myanimation{
               display: inline-block;
      		      color: green;
-     		      max-width: 890px;
+     		      max-width: 100%;
               white-space: nowrap;
      		      overflow:hidden;
               border-bottom: 5px outset black;
@@ -419,17 +419,17 @@
              100%{margin-left:0px;}
            }
            @keyframes reveal{
-             0%{opacity: 0; width: 0px;}
-             20%{opacity: 1; width: 0px;}
+             0%{opacity: 0; width: 0%;}
+             20%{opacity: 1; width: 0%;}
              80%{opacity: 1;}
-             100%{opacity: 0; width: 1055px;}
+             100%{opacity: 0; width: 100%;}
            }
            
        	  #myAnim2{
            display: block;
            overflow: hidden;
        	   color: rgb(111, 114, 111);
-       	   max-width: 890px;
+       	   max-width: 100%;
            white-space: nowrap;
            }
            #myAnim2:first-of-type{
@@ -456,10 +456,10 @@
            100%{margin-left:0px;}
            }
            @keyframes reveal{
-             0%{opacity: 0; width: 0px;}
-             20%{opacity: 1; width: 0px;}
+             0%{opacity: 0; width: 0%;}
+             20%{opacity: 1; width: 0%;}
              80%{opacity: 1;}
-             100%{opacity: 0; width: 1055px;}
+             100%{opacity: 0; width: 100%;}
            }
      /* Page Break : use <div class="page"/> to insert page break
     -------------------------------------------------------- */
