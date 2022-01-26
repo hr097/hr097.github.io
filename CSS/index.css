@@ -390,7 +390,7 @@ blockquote {
        #myanimation{
           display: inline-block;
            color: green;
-           max-width: 100%;
+           max-width: 890px;
           white-space: nowrap;
            overflow:hidden;
           border-bottom: 5px outset black;
@@ -429,7 +429,7 @@ blockquote {
        display: block;
        overflow: hidden;
         color: rgb(111, 114, 111);
-        max-width: 100%;
+        max-width: 890px;
        white-space: nowrap;
        }
        #myAnim2:first-of-type{
