@@ -509,18 +509,21 @@
       overflow: hidden;
       border-right: 3px solid;
       font-family: monospace;
-      font-size: 2em;
+      font-size: 32px;
       animation-iteration-count: infinite;
+      word-wrap: break-all;
     }
     
     @keyframes typing {
       from {
-        width: 0
+        width: 0;
+        word-wrap: break-word;
       }
     }
         
     @keyframes blink {
       50% {
-        border-color: transparent
+        border-color: transparent;
+        word-wrap: break-word;
       }
     }
