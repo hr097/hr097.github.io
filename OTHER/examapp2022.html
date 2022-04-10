@@ -133,6 +133,8 @@ tr:nth-child(even) {
     <button onclick="addData()" type="button">Add</button>
     <button id="refresh" type="button">Refresh</button>
     <button onclick="printData()" id="print-data" type="button">Print</button>
+    <br>
+    <h3 id="add-question"></h3>
 </form>
 </center>
 <div class="result">
@@ -197,7 +199,9 @@ tr:nth-child(even) {
               success: function (data) {
                 if(data==1)
                 {
-                  alert("Thank you for your answer !");
+                  document.getElementById("add-question").style.color = "green";
+                  document.getElementById("add-question").innerHTML="Thank you ! Question Added.";
+                  setTimeout(function(){document.getElementById("add-question").innerHTML=""; document.location.reload(true);refreshData()},3000);
                 }
               }
             })
@@ -238,10 +242,7 @@ tr:nth-child(even) {
 
      function refreshData()
      {
-
-
       removeAllChildNodes(document.getElementById("QA-2022"));
-
       $.ajax({
               url: "https://killing-winters.000webhostapp.com/api/getque",
               type:"GET",
