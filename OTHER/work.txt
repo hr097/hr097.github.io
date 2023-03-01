@@ -1,7 +1,0 @@
-#This is my First Web development project
-
-#jay swaminarayan
-#jay kashtbhanjan dev
-#jay ganeshay namh
-
-Version V_1.0
