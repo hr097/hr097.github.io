@@ -3,14 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -319,9 +311,10 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
+
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 405px;}
 
 .sidebar-info {
   position: relative;
@@ -750,14 +743,21 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  filter: grayscale(0);
   transition: var(--transition-1);
 }
 
 .clients-item img:hover { filter: grayscale(0); }
 
+#link
+{
+  color:white;
+}
 
-
+#link:visited
+{
+  color:white;
+}
 
 
 /*-----------------------------------*\
