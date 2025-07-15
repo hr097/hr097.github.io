@@ -15,6 +15,7 @@
 
 body {
   font-family: "Trirong", "SF Pro SemiBold" ,"Poppins","Times New Roman", sans-serif;
+  background-image: linear-gradient(to left, rgb(0, 0, 0) , rgb(183, 172, 172))
 }
 
 html {
@@ -196,22 +197,34 @@ section {
 
 .section__text__p1 {
   text-align: center;
+    color:rgb(240, 240, 240);
 }
 
 .section__text__p2 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  color:rgb(216, 212, 212);
 }
 
 .section__text__p3
 {
   font-family: "SF Pro SemiBold";
   font-size: 0.8rem;
+  color:white;
 }
 
+.section__text__p4
+{
+ color:rgb(114, 114, 114);
+}
+.section__text__p5
+{
+ color:rgb(225, 222, 222);
+}
 .title {
   font-size: 3rem;
   text-align: center;
+  color:rgb(215, 225, 215);
 }
 
 #socials-container {
@@ -262,6 +275,7 @@ section {
 
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
+  border: 1px solid white;
 }
 
 .btn-color-2 {
