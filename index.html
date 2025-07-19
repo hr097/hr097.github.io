@@ -7,45 +7,59 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/Icons/HR_Logo-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/HR_Logo-removebg-preview.png">
   </head>
   <body>
+    <div class="animated-bg">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+    </div>
+    <div class="bg-overlay"></div>
     <nav id="desktop-nav">
-      <!-- <div class="logo">Welcome to My Portfolio</div>  -->
+      <div class="logo">
+        <img src="./assets/icons/HR_Logo-removebg-preview.png" alt="HR Logo" class="logo-img">
+        <span class="logo-text">Portfolio</span>
+      </div>
       <div>
         <ul class="nav-links">
-          <li><a href="#projects"> Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Connect</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav"> 
-     <!-- <div class="logo">Welcome to My Portfolio</div>  -->
+    
+    <nav id="mobile-nav">
       <div class="hamburger-menu">
+        <div class="logo">
+          <img src="./assets/icons/HR_Logo-removebg-preview.png" alt="HR Logo" class="logo-img">
+          <span class="logo-text">Portfolio</span>
+        </div>
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="mobile-menu-links">
+          <a href="#about" onclick="toggleMenu()">About Me</a>
+          <a href="#experience" onclick="toggleMenu()">Experience</a>
+          <a href="#skills" onclick="toggleMenu()">Skills</a>
+          <a href="#projects" onclick="toggleMenu()">Projects</a>
+          <a href="#contact" onclick="toggleMenu()">Connect</a>
         </div>
       </div>
-   
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img style="border-radius: 100%;" src="./assets/Images/Harshil Ramani Professional Picture.jpg" alt="Harshil Ramani profile picture" />
+      <div class="section__pic-container animate-scale">
+        <img style="border-radius: 100%;" src="./assets/images/Harshil Ramani Professional Picture.jpg" alt="Harshil Ramani profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text animate-left">
         <h2 class="section__text__p1">Hello 🤝🏻 , I'm</h2>
         <h1 class="title">Harshil Ramani</h1>
-        <Software style="font-family: 'SF Pro SemiBold';margin-top:0px;" class="section__text__p2"> Software Engineer 👨🏻‍💻 | DevOps Enthusiast ♾️ | Active Learner 🚀 </p>
+        <p style="font-family: 'SF Pro SemiBold';margin-top:0px;" class="section__text__p2"> Software Engineer 👨🏻‍💻 | DevOps ♾️ Enthusiast | Active Learner 🚀 </p>
         <p class="section__text__p3"> Melbourne, Australia 🇦🇺 </p>
         <div class="btn-container">
           <button
@@ -56,23 +70,23 @@
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div id="socials-container" >
           <img
-            src="./assets/Icons/linkedin2-Photoroom.png"
+            src="./assets/icons/linkedin2-Photoroom.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon icon-glow"
             onclick="location.href='https://www.linkedin.com/in/harshil-ramani-2b528920b/'"
           />
           <img
-            src="./assets/Icons/LeetCode_logo_black2.png"
+            src="./assets/icons/LeetCode_logo_black2.png"
             alt="My LeetCode profile"
-            class="icon"
+            class="icon icon-glow"
             onclick="location.href='https://leetcode.com/u/hr097/'"
           />
           <img
-            src="./assets/Icons/github.png"
+            src="./assets/icons/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon icon-glow"
             onclick="location.href='https://github.com/hr097'"
           />
 
@@ -81,8 +95,8 @@
       </div>
     </section>
     <section id="about">
-      <p style="font-family: 'SF Pro SemiBold'" class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <p style="font-family: 'SF Pro SemiBold'" class="section__text__p1 animate-on-scroll">Get To Know More</p>
+      <h1 class="title animate-on-scroll">About Me</h1>
       <div class="section-container">
         <!-- <div class="section__pic-container">
           <img
@@ -93,385 +107,363 @@
         </div> -->
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <h4  class="section__text__p4">3+ Years <br />in Software Design, Development and Deployment along with Robust,Scable and Secure Back-end Services (API's) Development, 1+ Years Database,System Architcture Design and DevOps Engineering</h4>
+            <div class="details-container glass-card animate-on-scroll">
+              <div class="about-icon">
+                <img src="./assets/icons/experience.png" alt="Experience Icon" class="experience-img-icon" style="width:36px;height:36px;display:block;font-size:2.2em;"/>
+              </div>
+              <h3>Domain Expertise</h3>
+              <div class="about-content">
+                <ul class="arrow-list">
+                  <li><b>3+ Years</b> in Software Design, Development & Deployment of robust, secure, scalable Products/Applications (SaaS)</li><br>
+                  <li><b>2+ Years</b> as Freelancer & Open Source Code Contributor</li><br>
+                  <li><b>1+ Year</b> in AWS Cloud Services Deployment and DevOps Practises (CI/CD Pipeline, Automation, Iac, Monitoring & Logging )</li>
+                </ul>
+              </div>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-                <h4 class="section__text__p4" > M.Sc.(Cyber Security) in Information Technology and Systems From Victorian Institute of Technology, Melbourne, Australia (2023-2025) Grade: 'N/A'
-                <hr> 
-                B.Sc. in Inforamtion Technology
-                From Veer Narmad South Gujarat University (2020-2023) GRADE: 'A+' </h4>
+            <div class="details-container glass-card animate-on-scroll">
+              <div class="about-icon"><span class="experience-img-icon" style="font-size:2.2em;">🎓</span></div>
+              <h3>Educational Background</h3>
+              <div class="about-content">
+                <ul class="arrow-list">
+                  <li>
+                    <div class="edu-block">
+                      <div class="edu-title">Master of Information Technology and Systems <br> [ Cyber Security ] </div>
+                      <div class="edu-school">Victorian Institute of Technology, Melbourne, Australia</div>
+                      <div class="edu-meta">Feb 2024 – Nov 2025 <br> SGPA: 3.10+</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="edu-block">
+                      <div class="edu-title">Bachelor of Science in Information Technology</div>
+                      <div class="edu-school">Veer Narmad South Gujarat University, Gujarat, India</div>
+                      <div class="edu-meta">July 2020 – April 2023 <br> CGPA: 8.92</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-              <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+            <div class="details-container glass-card animate-on-scroll">
+              <div class="about-icon"><span class="experience-img-icon" style="font-size:2.2em;">💡</span></div>
               <h3>Area of Interest & Learning</h3>
-              <h4 class="section__text__p4">Artificial Intelligence & Machine Learning, LLM-Neural Networks,
-                Cloud Technologies, Smart Automations</h4>
+              <div class="about-content area-interest">
+                <ul class="arrow-list">
+                  <li>Artificial Intelligence & Machine Learning Powered Smart Solutions</li>
+                  <li>DevSecOps, SRE & Platform Engineering</li>
+                  <li>Cloud Native Applications/Microservices Development</li>
+                  <li> Ethical Hacking Practices & Digital Security Improvment</li>
+                  <li>IoT & Embedded Systems Development </li>
+                </ul>
+              </div>
             </div>
-
-          </div>
-          <div class="text-container">
-            <p class="section__text__p5" >
-I’m a Software Development Engineer with a strong passion for building scalable, robust, and user-focused solutions. I bring intermediate to advanced-level skills and experience in C/C++ native application development, along with Python and Bash scripting (Linux) for automation tasks, Additionally, I posses experience in developing back-ends API's for C# .NET Applications.
-
-I’ve worked on a wide range of web-based solutions using JavaScript and PHP as back-end service providers. I also have hands-on experience with both relational and non-relational databases, including MySQL, SQL Server, PostgreSQL, and MongoDB.
-
-Beyond traditional software development, I have a strong interest in embedded systems and IoT. I enjoy building smart solutions using platforms like Arduino, ESP32/ESP8266, and Raspberry Pi—often through personal projects and hobbies.
-
-Currently, I’m enhancing my DevOps skills and deepening my understanding of cloud development, particularly with AWS. I strongly look forward for learning & integrating AI based solutions to traditional software development processes. I’ve contributed to both personal and commercial IT systems, consistently delivering high-quality results with a strong focus on client satisfaction and clear requirements.
-
-I thrive in collaborative environments, enjoy solving real-world problems, and actively contribute to open-source communities. Whether it’s writing clean, maintainable code or optimizing system performance, I stay focused on delivering impactful results.
-
-Let’s connect and talk tech—I’d love to hear about your work and explore areas of mutual interest.
-            </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+
+    </section>
+    <section id="skills">
+      <p class="section__text__p5 animate-on-scroll"></p>
+      <h1 class="title animate-on-scroll">Skillset & Technologies</h1>
+      <div class="skills-tree-container animate-on-scroll">
+        <ul class="skills-tree">
+          <li class="tree-branch">
+            <div class="branch-label"><span>🌐</span> Web</div> 
+            <ul>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/html5-original.svg?size=32" alt="HTML5"/>HTML5</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/css3-original.svg?size=32" alt="CSS3"/>CSS3</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/javascript-original.svg?size=32" alt="JavaScript"/>JavaScript</li>
+              <!-- <li class="tree-leaf" >Upskilling In => </li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/nextjs-icon.svg" alt="Next JS"/>Next JS</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/typescript-original.svg?size=32" alt="TypeScript"/>TypeScript</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/angularjs-original.svg?size=32" alt="Angular"/>Angular</li> -->
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>💻</span> Programming</div>
+            <ul>
+
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/c-original.svg?size=32" alt="C"/>C</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/cplusplus-original.svg?size=32" alt="C++"/>C++</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/csharp-original.svg?size=32" alt="C#"/>C#</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/python-original.svg?size=32" alt="Python"/>Python</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/php-original.svg?size=32" alt="PHP"/>PHP</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/nodejs-original.svg?size=32" alt="NodeJS"/>NodeJS</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/electron-original.svg?size=32" alt="ElectronJS"/>ElectronJS</li>
+              <li class="tree-leaf"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Linux-Bash"/>Bash Scripting</li>
+             
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>☁️</span> Cloud & Servers</div>
+            <ul>
+              <li class="tree-leaf"><img src="./assets/icons/skills/aws.png" alt="AWS"/>AWS</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/apache-original.svg?size=32" alt="Apache"/>Apache</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/nginx-original.svg?size=32" alt="Nginx"/>Nginx</li>
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>🗄️</span> Databases</div>
+            <ul>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/mysql-original-wordmark.svg?size=32" alt="MySQL"/>MySQL</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/mongodb-original.svg?size=32" alt="MongoDB"/>MongoDB</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/postgresql-original.svg?size=32" alt="PostgreSQL"/>PostgreSQL</li>
+              <li class="tree-leaf"><span style="font-size:1.5em;">🗄️</span>SQLite</li>
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>🧩</span> Frameworks</div>
+            <ul>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/react-original.svg?size=32" alt="ReactJS"/>ReactJS</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/express-original.svg?size=32" alt="ExpressJS"/>ExpressJS</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/mui-logo.png" alt="MUI"/>MUI</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/jquery-original.svg?size=32" alt="jQuery"/>jQuery</li>
+              <li class="tree-leaf"><img style="width:auto" src="./assets/icons/skills/Bootstrap_logo.png" alt="Bootstrap"/>Bootstrap5</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/flask-images.png" alt="Flask"/>Flask</li>
+
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/dot-net-original.svg?size=32" alt=".NET"/>Microsoft .NET</li>
+
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>🛠️</span> Tools</div>
+            <ul>
+              <li class="tree-leaf"><img src="./assets/icons/vscode.png" alt="VS Code"/>VS Code</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/Visual_Studio_Icon_2022.png" alt="Visual Studio"/>Visual Studio</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/git-original.svg?size=32" alt="Git"/>Git</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/github-original.svg?size=32" alt="GitHub"/>GitHub</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/Jira.svg" alt="Jira"/>Jira Software</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/Trello-Emblem.png" alt="Trello"/>Trello Board</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/linux-original.svg?size=32" alt="Linux"/>Linux OS</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/ms-teams.png" alt="MS-Teams"/>MS-Teams</li>
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>⚙️</span> DevOps & Deployment</div>
+            <ul>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/docker-original.svg?size=32" alt="Docker"/>Docker</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/Kubernetes_logo_without_workmark.png" alt="Kubernetes"/>Kubernetes</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/Jenkins-removebg-preview.png" alt="Jenkins"/>Jenkins</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/terraform-removebg-preview.png" alt="Terraform"/>Terraform</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/ansible-removebg-preview.png" alt="Ansible"/>Ansible</li>
+              <li class="tree-leaf"><img src="./assets/icons/skills/prometheus-removebg-preview.png" alt="Prometheus"/>Prometheus</li>
+            </ul>
+          </li>
+          <li class="tree-branch">
+            <div class="branch-label"><span>🌟</span> Core Skills</div>
+            <ul>
+              <li class="tree-leaf">System/Product Design Engineering</li>
+              <li class="tree-leaf">Professional Communication (English)</li>
+              <li class="tree-leaf">Agile (Scurm Master/ Team Leadership)</li>
+              <li class="tree-leaf">Data Stuctures & Algorithm </li>
+              <li class="tree-leaf">Code Optimisation</li>
+            </ul>
+          </li>
+          <!-- <li class="tree-branch">
+            <div class="branch-label"><span>🚀</span> Currently Enhacing </div>
+            <ul>
+              <li class="tree-leaf">AI/ML</li>
+              <li class="tree-leaf">Online Security</li>
+              <li class="tree-leaf">Automation Systems</li>
+              <li class="tree-leaf">SRE / Platform Engineering</li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1 animate-on-scroll">About My</p>
+      <h1 class="title animate-on-scroll">Work Experience</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+        <div class="experience-card animate-on-scroll">
+          <div class="experience-header">
+            <img src="./assets/images/weetech.jpeg" alt="WeeTech Solution Logo" class="company-logo" />
+            <div class="experience-info">
+              <h3>Software Developer & DevOps Intern</h3>
+              <p class="company-name">WeeTech Solution</p>
+              <p class="experience-date">Mar 2023 - Oct 2023</p>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frameworks & Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-                            <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-                            <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-               
+          <p class="experience-description">Built CI/CD pipelines using Bash & Python, deploying to AWS, Vercel, and Render, reducing manual deployment effort by 40% through automation.</p>
+        </div>
+        
+        <div class="experience-card animate-on-scroll">
+          <div class="experience-header">
+            <img src="./assets/images/skybitsolutions_logo.jpeg" alt="SkyBit Solutions Logo" class="company-logo" />
+            <div class="experience-info">
+              <h3>Software Application Developer (Backend Services)</h3>
+              <p class="company-name">SkyBit Solutions</p>
+              <p class="experience-date">Dec 2021 – Dec 2022</p>
             </div>
           </div>
-                    <div class="details-container">
-            <h2 class="experience-sub-title">Other</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-                <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-                            <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-               
+          <p class="experience-description">Developed backend features using PHP, Node.js, and ASP.NET MVC, building strong foundations in OOP and core software development principles.</p>
+        </div>
+        
+        <div class="experience-card animate-on-scroll">
+          <div class="experience-header">
+            <img src="./assets/images/chegg.png" alt="Chegg Logo" class="company-logo" />
+            <div class="experience-info">
+              <h3>Computer Science - Subject Matter Expert</h3>
+              <p class="company-name">Chegg Pvt Ltd</p>
+              <p class="experience-date">Feb 2022 – Mar 2022</p>
             </div>
           </div>
+          <p class="experience-description">Solved 1000+ Computer Science problems and authored 10+ tutorials on core topics, mentoring 100+ students in languages and systems fundamentals.</p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <p class="section__text__p1 animate-on-scroll">Browse My Recent</p>
+      <h1 class="title animate-on-scroll">Projects</h1>
+      <div class="projects-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container animate-on-scroll">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" alt="JAMES Project" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">JAMES</h2>
+            <p class="project-desc">A comprehensive job application management system for tracking applications, interviews, and career opportunities.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container">
+
+          <div class="details-container color-container animate-on-scroll">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" alt="CropBox Project" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">CropBox</h2>
+            <p class="project-desc">An intelligent image cropping and editing tool with automated detection and smart cropping algorithms.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">Flask</span>
+            </div>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container">
+
+          <div class="details-container color-container animate-on-scroll">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-3.png" alt="AMS Project" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">AMS Attendance Management Software</h2>
+            <p class="project-desc">A robust attendance tracking system with facial recognition and automated reporting capabilities.</p>
+            <div class="project-tags">
+              <span class="project-tag">C++</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">SQLite</span>
+            </div>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
             </div>
           </div>
+
+          <div class="details-container color-container animate-on-scroll">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="ENDECTER Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">ENDECTER</h2>
+            <p class="project-desc">Advanced file encryption and decryption tool with secure key management and multiple algorithm support.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Cryptography</span>
+              <span class="project-tag">Tkinter</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container animate-on-scroll">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Folder-locker Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Folder-locker hider</h2>
+            <p class="project-desc">A secure folder protection system that hides and encrypts sensitive directories with password authentication.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">File System</span>
+              <span class="project-tag">Security</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container animate-on-scroll">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="IELTS BUDDY Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">IELTS BUDDY</h2>
+            <p class="project-desc">An interactive IELTS preparation platform with practice tests, scoring, and personalized study recommendations.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container animate-on-scroll">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="APPXCEL Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">APPXCEL</h2>
+            <p class="project-desc">A comprehensive Excel-like application with advanced data processing, formulas, and collaborative features.</p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container animate-on-scroll">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Dparivar Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Dparivar</h2>
+            <p class="project-desc">A family management and genealogy tracking application with relationship mapping and family tree visualization.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">D3.js</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hr097'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
+            </div>
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div   class="section__text__p3 contact-info-upper-container">
+      <p class="section__text__p1 animate-on-scroll">Get in Touch</p>
+      <h1 class="title animate-on-scroll">Contact Me</h1>
+      <div   class="section__text__p3 contact-info-upper-container animate-on-scroll">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./assets/icons/email-gmail.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
@@ -479,7 +471,7 @@ Let’s connect and talk tech—I’d love to hear about your work and explore a
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/Icons/linkedin.png"
+            src="./assets/icons/linkedin-colorful.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -491,10 +483,11 @@ Let’s connect and talk tech—I’d love to hear about your work and explore a
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-          <li><a href="#projects"> Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#contact">Connect</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects"> Projects</a></li>
+            <li><a href="#contact">Connect</a></li>
           </ul>
         </div>
       </nav>
