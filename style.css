@@ -696,9 +696,10 @@ article .icon:hover {
   height: 60px;
   object-fit: contain;
   border-radius: 12px;
-  background: #fff;
+  background:transparent;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   padding: 8px;
+  filter: drop-shadow(0 0 8px #e2e29c) drop-shadow(0 0 2px #72642b);
 }
 
 .company-logo-placeholder {
@@ -769,12 +770,28 @@ article .icon:hover {
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+}
+
+.article-container {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 25px;
+  margin-bottom: 1rem;
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .project-title {
@@ -795,6 +812,11 @@ article .icon:hover {
   margin: 0.5rem 0 0.7rem 0;
   text-align: center;
   font-weight: 400;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
 }
 .project-tags {
   display: flex;
@@ -803,12 +825,14 @@ article .icon:hover {
   justify-content: center;
   margin-bottom: 1rem;
   padding: 0 0.5rem;
+  min-height: 60px;
+  align-items: center;
 }
 .project-tag {
   background: rgba(255, 215, 0, 0.13);
   color: #FFD700;
-  font-size: 0.8rem;
-  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 15px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -818,6 +842,9 @@ article .icon:hover {
   transition: all 0.2s ease;
   box-shadow: 0 0 8px 0 rgba(255, 215, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .project-tag:hover {
   background: rgba(255, 215, 0, 0.22);
@@ -928,6 +955,13 @@ footer p {
   color: #00ffd0;
   letter-spacing: 1px;
 }
+
+.skills-round-image
+{
+border:1px solid rgb(59, 59, 59);
+border-radius: 50%;
+}
+
 .skills-icons-row {
   display: flex;
   flex-wrap: wrap;
@@ -1229,17 +1263,34 @@ footer p {
 .projects-details-container .about-containers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
   justify-items: center;
+  align-items: start;
+  padding: 0 2rem;
 }
 @media (max-width: 900px) {
   .projects-details-container .about-containers {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+  .color-container {
+    min-height: 420px;
+    max-width: 350px;
   }
 }
 @media (max-width: 600px) {
   .projects-details-container .about-containers {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .color-container {
+    min-height: 400px;
+    max-width: 100%;
+  }
+  .project-desc {
+    min-height: 35px;
   }
 }
 
