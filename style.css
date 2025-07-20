@@ -776,6 +776,7 @@ article .icon:hover {
   justify-content: space-between;
   width: 100%;
   max-width: 320px;
+  box-sizing: border-box;
 }
 
 .article-container {
@@ -817,6 +818,9 @@ article .icon:hover {
   align-items: center;
   justify-content: center;
   min-height: 80px;
+  padding: 0 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .project-tags {
   display: flex;
@@ -837,7 +841,9 @@ article .icon:hover {
   font-weight: 600;
   letter-spacing: 0.02em;
   border: 1px solid rgba(255, 215, 0, 0.18);
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   user-select: none;
   transition: all 0.2s ease;
   box-shadow: 0 0 8px 0 rgba(255, 215, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -845,6 +851,7 @@ article .icon:hover {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.2;
 }
 .project-tag:hover {
   background: rgba(255, 215, 0, 0.22);
@@ -1267,6 +1274,8 @@ border-radius: 50%;
   justify-items: center;
   align-items: start;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 @media (max-width: 900px) {
   .projects-details-container .about-containers {
@@ -1276,7 +1285,12 @@ border-radius: 50%;
   }
   .color-container {
     min-height: 420px;
-    max-width: 350px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .project-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
   }
 }
 @media (max-width: 600px) {
@@ -1288,9 +1302,42 @@ border-radius: 50%;
   .color-container {
     min-height: 400px;
     max-width: 100%;
+    width: 100%;
   }
   .project-desc {
     min-height: 35px;
+    font-size: 1rem;
+    padding: 0 0.3rem;
+  }
+  .project-tag {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.4rem;
+    line-height: 1.1;
+  }
+  .project-title {
+    font-size: 1.1rem;
+    margin: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-details-container .about-containers {
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+  }
+  .color-container {
+    min-height: 380px;
+  }
+  .project-img {
+    height: 300px;
+  }
+  .project-tag {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
+  }
+  .project-desc {
+    font-size: 0.95rem;
+    min-height: 30px;
   }
 }
 
