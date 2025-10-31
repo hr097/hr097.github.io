@@ -1361,3 +1361,33 @@ border-radius: 50%;
   transform: scale(1.08) translateY(-2px);
 }
 
+.typewriter-container {
+  /* Optional: Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter-text {
+  font-family: monospace; /* Monospaced font for a classic look */
+  color: #fff;
+  overflow: hidden; /* Hide text that's not yet "typed" */
+  white-space: nowrap; /* Keep text on one line */
+  border-right: 0.15em solid orange; /* Blinking cursor */
+  width: 0; /* Start with zero width */
+  animation: 
+    typing 4s steps(30, end) forwards, /* Typing animation */
+    blink-caret 0.75s step-end infinite; /* Blinking cursor animation */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

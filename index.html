@@ -19,7 +19,7 @@
     <nav id="desktop-nav">
       <div class="logo">
         <img src="./assets/icons/HR_Logo-removebg-preview.png" alt="HR Logo" class="logo-img">
-        <span class="logo-text">Portfolio</span>
+        <span class="logo-text">My Portfolio</span>
       </div>
       <div>
         <ul class="nav-links">
@@ -36,7 +36,7 @@
       <div class="hamburger-menu">
         <div class="logo">
           <img src="./assets/icons/HR_Logo-removebg-preview.png" alt="HR Logo" class="logo-img">
-          <span class="logo-text">Portfolio</span>
+          <span class="logo-text">My Portfolio</span>
         </div>
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -59,8 +59,10 @@
       <div class="section__text animate-left">
         <h2 class="section__text__p1">Hello 🤝🏻 , I'm</h2>
         <h1 class="title">Harshil Ramani</h1>
-        <p style="font-family: 'SF Pro SemiBold';margin-top:0px;" class="section__text__p2"> Software Engineer 👨🏻‍💻 | DevOps ♾️ Enthusiast | Active Learner 🚀 </p>
-        <p class="section__text__p3"> Melbourne, Australia 🇦🇺 </p>
+        <div class="typewriter-container">
+        <p style="font-family: 'SF Pro SemiBold';margin-top:0px;" class="section__text__p2 typewriter-text"> Software Development Engineer 👨🏻‍💻 </p>
+        </div>
+        <p class="section__text__p3"> From 📍 Surat, India 🇮🇳 &nbsp; ✈️ &nbsp; Melbourne, Australia 🇦🇺 </p>
         <div class="btn-container">
           <button
             class="btn btn-color-1"
@@ -70,6 +72,7 @@
             Contact Info
           </button>
         </div>
+
         <div id="socials-container" >
           <img
             src="./assets/icons/linkedin2-Photoroom.png"
@@ -114,9 +117,9 @@
               <h3>Domain Expertise</h3>
               <div class="about-content">
                 <ul class="arrow-list">
-                  <li><b>3+ Years</b> in Software Design, Development & Deployment of robust, secure, scalable Products/Applications (SaaS)</li><br>
-                  <li><b>2+ Years</b> as Freelancer & Open Source Code Contributor</li><br>
-                  <li><b>1+ Year</b> in AWS Cloud Services Deployment and DevOps Practises (CI/CD Pipeline, Automation, Iac, Monitoring & Logging )</li>
+                  <li><b>3+ Years</b> in Software Engineering & Deployment of robust, secure, scalable Applications (SaaS/Cloud)</li><br>
+                  <li><b>2+ Years</b> in AWS/GCP Cloud and Microservices Architecture</li><br>
+                  <li><b>1+ Year</b> in DevOps Engineering (CI/CD, IaC, Automation, IaC, Monitoring & Logging, Docker/K8s )</li>
                 </ul>
               </div>
             </div>
@@ -129,14 +132,16 @@
                     <div class="edu-block">
                       <div class="edu-title">Master of Information Technology and Systems <br> [ Cyber Security ] </div>
                       <div class="edu-school">Victorian Institute of Technology, Melbourne, Australia</div>
-                      <div class="edu-meta">Feb 2024 – Nov 2025 <br> SGPA: 3.10+</div>
+                      <div class="edu-meta">Feb 2024 – Nov 2025 </div>
+                      <div class="edu-school">Grade: N/A</div>
                     </div>
                   </li>
                   <li>
                     <div class="edu-block">
                       <div class="edu-title">Bachelor of Science in Information Technology</div>
                       <div class="edu-school">Veer Narmad South Gujarat University, Gujarat, India</div>
-                      <div class="edu-meta">July 2020 – April 2023 <br> CGPA: 8.92</div>
+                      <div class="edu-meta">July 2020 – June 2023 </div>
+                      <div class="edu-school">Grade: FIRST CLASS DISTINCTION</div>
                     </div>
                   </li>
                 </ul>
@@ -149,9 +154,9 @@
                 <ul class="arrow-list">
                   <li>Artificial Intelligence & Machine Learning Powered Smart Solutions</li>
                   <li>DevSecOps, SRE & Platform Engineering</li>
-                  <li>Cloud Native Applications/Microservices Development</li>
-                  <li> Ethical Hacking Practices & Digital Security Improvment</li>
-                  <li>IoT & Embedded Systems Development </li>
+                  <li>Cloud Native Applications/Microservices</li>
+                  <li>IaC, GitOps & MLOps</li>
+                  <li>Automation & Embedded Systems</li>
                 </ul>
               </div>
             </div>
@@ -168,12 +173,11 @@
           <li class="tree-branch">
             <div class="branch-label"><span>🌐</span> Web</div> 
             <ul>
-              <li class="tree-leaf"><img src="https://icongr.am/devicon/html5-original.svg?size=32" alt="HTML5"/>HTML5</li>
-              <li class="tree-leaf"><img src="https://icongr.am/devicon/css3-original.svg?size=32" alt="CSS3"/>CSS3</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/html5-original.svg?size=32" alt="HTML"/>HTML</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/css3-original.svg?size=32" alt="CSS"/>CSS</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/javascript-original.svg?size=32" alt="JavaScript"/>JavaScript</li>
               <!-- <li class="tree-leaf" >Upskilling In => </li>
               <li class="tree-leaf"><img src="./assets/icons/skills/nextjs-icon.svg" alt="Next JS"/>Next JS</li>
-              <li class="tree-leaf"><img src="https://icongr.am/devicon/typescript-original.svg?size=32" alt="TypeScript"/>TypeScript</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/angularjs-original.svg?size=32" alt="Angular"/>Angular</li> -->
             </ul>
           </li>
@@ -188,8 +192,10 @@
               <li class="tree-leaf"><img src="https://icongr.am/devicon/php-original.svg?size=32" alt="PHP"/>PHP</li>
               <li class="tree-leaf"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Linux-Bash"/>Bash Scripting</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/nodejs-original.svg?size=32" alt="NodeJS"/>NodeJS</li>
-              <li class="tree-leaf"><img src="https://icongr.am/devicon/electron-original.svg?size=32" alt="ElectronJS"/>ElectronJS</li>
-              <li class="tree-leaf"><img src="./assets/icons/skills/Socket-io.svg" alt="Socket.io"/>Socket.io</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/typescript-original.svg?size=32" alt="TypeScript"/>TypeScript</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/java-original-wordmark.svg?size=32&color=currentColor" alt="Java"/>Java</li>
+              <!-- <li class="tree-leaf"><img src="https://icongr.am/devicon/electron-original.svg?size=32" alt="ElectronJS"/>ElectronJS</li> -->
+              <li class="tree-leaf"><img src="./assets/icons/skills/Socket-io.svg" alt="Socket.io"/>Socket.IO</li>
 
              
             </ul>
@@ -198,7 +204,8 @@
             <div class="branch-label"><span>☁️</span> Cloud & Servers</div>
             <ul>
               <li class="tree-leaf"><img class="skills-round-image" src="./assets/icons/skills/aws2.png" alt="AWS"/>AWS</li>
-              <li class="tree-leaf"><img src="https://icongr.am/devicon/apache-original.svg?size=32" alt="Apache"/>Apache</li>
+              <li class="tree-leaf"><img class="skills-round-image" style="border-radius:25%;height:35px;" src="./assets/icons/skills/gcp.jpeg" alt="GCP"/>GCP</li>
+              <li class="tree-leaf"><img src="/assets/icons/skills/firebase.png" alt="Firebase"/>Firebase</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/nginx-original.svg?size=32" alt="Nginx"/>Nginx</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/linux-original.svg?size=32" alt="Linux"/>Linux</li>
             </ul>
@@ -209,6 +216,7 @@
               <li class="tree-leaf"><img src="https://icongr.am/devicon/mysql-original-wordmark.svg?size=32" alt="MySQL"/>MySQL</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/mongodb-original.svg?size=32" alt="MongoDB"/>MongoDB</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/postgresql-original.svg?size=32" alt="PostgreSQL"/>PostgreSQL</li>
+              <li class="tree-leaf"><img src="https://icongr.am/devicon/redis-original.svg?size=32&color=currentColor" alt="Redis"/>Redis</li>
               <li class="tree-leaf"><img src="./assets/icons/skills/SQL-SERVER-download.png" alt="SQL Server"/>SQL Server</li>
             </ul>
           </li>
@@ -235,10 +243,10 @@
               <!-- <li class="tree-leaf"><img src="https://icongr.am/devicon/gitlab-original.svg?size=32" alt="GitLab"/>GitLab</li> -->
               <li class="tree-leaf"><img class="skills-round-image" class="skills-round-image" src="./assets/icons/skills/kafka.jpg" alt="Kafka"/>Kafka</li>
               <li class="tree-leaf"><img src="./assets/icons/skills/Jira.svg" alt="Jira"/>Jira Software</li>
-              <li class="tree-leaf"><img src="./assets/icons/skills/Trello-Emblem.png" alt="Trello"/>Trello Board</li>
+              <!-- <li class="tree-leaf"><img src="./assets/icons/skills/Trello-Emblem.png" alt="Trello"/>Trello Board</li> -->
               <li class="tree-leaf"><img src="./assets/icons/skills/postman-api-testing.png" alt="Postman"/>Postman</li>
-              <!-- <li class="tree-leaf"><img src="./assets/icons/skills/n8n.png" alt="n8n"/>n8n</li> -->
-              <li class="tree-leaf"><img src="./assets/icons/skills/ms-teams.png" alt="MS-Teams"/>MS-Teams</li>
+              <li class="tree-leaf"><img class="skills-round-image" src="./assets/icons/skills/n8n-2.png" alt="n8n"/>n8n</li>
+              <!-- <li class="tree-leaf"><img src="./assets/icons/skills/ms-teams.png" alt="MS-Teams"/>MS-Teams</li> -->
             </ul>
           </li>
           <li class="tree-branch">
@@ -248,20 +256,20 @@
               <li class="tree-leaf"><img src="./assets/icons/skills/Jenkins-removebg-preview.png" alt="Jenkins"/>Jenkins</li>
               <li class="tree-leaf"><img src="https://icongr.am/devicon/docker-original.svg?size=32" alt="Docker"/>Docker</li>
               <li class="tree-leaf"><img src="./assets/icons/skills/Kubernetes_logo_without_workmark.png" alt="Kubernetes"/>Kubernetes</li>
-              <li class="tree-leaf"><img src="./assets/icons/skills/terraform-removebg-preview.png" alt="Terraform"/>Terraform</li>
+              <!--<li class="tree-leaf"><img src="./assets/icons/skills/terraform-removebg-preview.png" alt="Terraform"/>Terraform</li>
               <li class="tree-leaf"><img class="skills-round-image" src="./assets/icons/skills/ansible-removebg-preview.png" alt="Ansible"/>Ansible</li>
               <li class="tree-leaf"><img src="./assets/icons/skills/prometheus-removebg-preview.png" alt="Prometheus"/>Prometheus</li>
-              <li class="tree-leaf"><img src="./assets/icons/skills/grafana-removebg-preview.png" alt="Grafana"/>Grafana</li>
-            </ul>
+              <li class="tree-leaf"><img src="./assets/icons/skills/grafana-removebg-preview.png" alt="Grafana"/>Grafana</li>-->
+            </ul> 
           </li>
           <li class="tree-branch">
-            <div class="branch-label"><span>🌟</span> Core Skills</div>
+            <div class="branch-label"><span>🌟</span> Core Comptetencies</div>
             <ul>
               <li class="tree-leaf">System/Product Design Engineering</li>
               <li class="tree-leaf">Professional Communication (English)</li>
-              <li class="tree-leaf">Agile (Scrum Master/ Team Leadership)</li>
+              <li class="tree-leaf">Agile (Scrum/Leadership)</li>
               <li class="tree-leaf">Data Stuctures & Algorithm </li>
-              <li class="tree-leaf">Code Optimisation</li>
+              <li class="tree-leaf">Code Optimisation & Comptitive Coding</li>
             </ul>
           </li>
           <!-- <li class="tree-branch">
@@ -280,29 +288,49 @@
     <section id="experience">
       <p class="section__text__p1 animate-on-scroll">About My</p>
       <h1 class="title animate-on-scroll">Work Experience</h1>
+        
+      
+
+   
+
       <div class="experience-details-container">
+
+        <div class="experience-card animate-on-scroll">
+          <div class="experience-header">
+            <img src="./assets/images/scare.jpg" alt="SarasCare Logo" class="company-logo" />
+            <div class="experience-info">
+              <h3>Software Engineering Intern</h3>
+              <p class="company-name">SarasCare-Docklands, Melbourne, Australia.</p>
+              <p class="experience-date">Mar 2023 - Oct 2023</p>
+            </div>
+          </div>
+          <!-- <p class="experience-description">Architectured EventOps Platform for real-time event-tracking monitoring and post event data analysis. built MVP within 5 weeks.</p> -->
+        </div>
+
+
         <div class="experience-card animate-on-scroll">
           <div class="experience-header">
             <img src="./assets/images/weetech.jpeg" alt="WeeTech Solution Logo" class="company-logo" />
             <div class="experience-info">
-              <h3>Software Developer & DevOps Intern</h3>
+              <h3>FullStack Software Developer & DevOps Intern</h3>
               <p class="company-name">WeeTech Solution</p>
               <p class="experience-date">Mar 2023 - Oct 2023</p>
             </div>
           </div>
-          <p class="experience-description">Built CI/CD pipelines using Bash & Python, deploying to AWS, Vercel, and Render, reducing manual deployment effort by 40% through automation.</p>
+          <!-- <p class="experience-description">Built CI/CD pipelines using Bash & Python, deploying to AWS, Vercel, and Render, reducing manual deployment effort by 40% through automation.</p> -->
         </div>
+      
         
         <div class="experience-card animate-on-scroll">
           <div class="experience-header">
             <img src="./assets/images/skybitsolutions_logo.jpeg" alt="SkyBit Solutions Logo" class="company-logo" />
             <div class="experience-info">
-              <h3>Software Application Developer (Backend Services)</h3>
+              <h3>Software Developer (Back-end Services)</h3>
               <p class="company-name">SkyBit Solutions</p>
               <p class="experience-date">Dec 2021 – Dec 2022</p>
             </div>
           </div>
-          <p class="experience-description">Developed backend features using PHP, Node.js, and ASP.NET MVC, building strong foundations in OOP and core software development principles.</p>
+          <!-- <p class="experience-description">Developed backend services using PHP, Node.js, and ASP.NET MVC, building strong foundations in OOP and core software development principles.</p> -->
         </div>
         
         <div class="experience-card animate-on-scroll">
@@ -314,7 +342,7 @@
               <p class="experience-date">Feb 2022 – Mar 2022</p>
             </div>
           </div>
-          <p class="experience-description">Solved 1000+ Computer Science problems and authored 10+ tutorials on core topics, mentoring 100+ students in languages and systems fundamentals.</p>
+          <!-- <p class="experience-description">Solved 1000+ Computer Science problems and authored 10+ tutorials on core CS topics, mentoring 100+ students in languages and systems fundamentals.</p> -->
         </div>
       </div>
       
